@@ -1,0 +1,51 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+}
+.trilho {
+        width: 150px;
+        background-color: rgb(173, 173, 173);
+        height: 58px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+}
+.trilho #filho{
+        background-color: black;
+        width: 50px;
+        height: 53px;
+        border-radius: 50%;      
+        position: relative;
+        left: 0px;
+        transition: .5s;
+}
+main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 200px;
+        flex-direction: column;
+        
+}
+body{
+        background-color: rgb(34, 32, 32);
+        color: white;
+      
+}
+
+
+.trilho.dark #filho {
+       left: 95px;
+       background-color: white;
+}
+.trilho.dark{
+        background-color: gainsboro;
+}
+body.dark{
+        background-color: white;
+        color: #000;
+}
